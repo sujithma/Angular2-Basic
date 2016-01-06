@@ -4,4 +4,9 @@ import {RouterConfig, ROUTER_DIRECTIVES} from 'angular2/router';
 	templateUrl: `./app/login/login.html`
 	directives: [ROUTER_DIRECTIVES]
 })
-export class LoginComponent {}
+export class LoginComponent {
+	public model;
+	onSubmit(){
+		console.log("hii");
+	}
+}

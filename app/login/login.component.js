@@ -22,6 +22,9 @@ System.register(['angular2/core', 'angular2/router'], function(exports_1) {
             LoginComponent = (function () {
                 function LoginComponent() {
                 }
+                LoginComponent.prototype.onSubmit = function () {
+                    console.log("hii");
+                };
                 LoginComponent = __decorate([
                     core_1.Component({
                         templateUrl: "./app/login/login.html",
