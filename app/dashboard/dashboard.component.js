@@ -9,26 +9,26 @@ System.register(['angular2/core'], function(exports_1) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
     var core_1;
-    var HomeComponent;
+    var DashboardComponent;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
             }],
         execute: function() {
-            HomeComponent = (function () {
-                function HomeComponent() {
+            DashboardComponent = (function () {
+                function DashboardComponent() {
                 }
-                HomeComponent = __decorate([
+                DashboardComponent = __decorate([
                     core_1.Component({
                         template: "<h1>Home</h1>"
                     }), 
                     __metadata('design:paramtypes', [])
-                ], HomeComponent);
-                return HomeComponent;
+                ], DashboardComponent);
+                return DashboardComponent;
             })();
-            exports_1("HomeComponent", HomeComponent);
+            exports_1("DashboardComponent", DashboardComponent);
         }
     }
 });
-//# sourceMappingURL=home.component.js.map
+//# sourceMappingURL=dashboard.component.js.map

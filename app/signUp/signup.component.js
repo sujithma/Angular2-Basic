@@ -9,7 +9,7 @@ System.register(['angular2/core', 'angular2/router'], function(exports_1) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
     var core_1, router_1;
-    var LoginComponent;
+    var SignupComponent;
     return {
         setters:[
             function (core_1_1) {
@@ -19,24 +19,23 @@ System.register(['angular2/core', 'angular2/router'], function(exports_1) {
                 router_1 = router_1_1;
             }],
         execute: function() {
-            LoginComponent = (function () {
-                function LoginComponent() {
+            SignupComponent = (function () {
+                function SignupComponent() {
                 }
-                LoginComponent.prototype.onSubmit = function (event, username, password) {
-                    console.log("hii");
+                SignupComponent.prototype.createAccount = function (event, username, password) {
                     console.log(username);
                 };
-                LoginComponent = __decorate([
+                SignupComponent = __decorate([
                     core_1.Component({
-                        templateUrl: "./app/login/login.html",
+                        templateUrl: './app/signUp/signUp.html',
                         directives: [router_1.ROUTER_DIRECTIVES]
                     }), 
                     __metadata('design:paramtypes', [])
-                ], LoginComponent);
-                return LoginComponent;
+                ], SignupComponent);
+                return SignupComponent;
             })();
-            exports_1("LoginComponent", LoginComponent);
+            exports_1("SignupComponent", SignupComponent);
         }
     }
 });
-//# sourceMappingURL=login.component.js.map
+//# sourceMappingURL=signup.component.js.map
