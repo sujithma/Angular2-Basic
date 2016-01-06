@@ -9,26 +9,25 @@ System.register(['angular2/core'], function(exports_1) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
     var core_1;
-    var DashboardComponent;
+    var signUpService;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
             }],
         execute: function() {
-            DashboardComponent = (function () {
-                function DashboardComponent() {
+            //import {Http} from 'angular2/http';
+            signUpService = (function () {
+                function signUpService() {
                 }
-                DashboardComponent = __decorate([
-                    core_1.Component({
-                        templateUrl: './app/dashboard/dashboard.html'
-                    }), 
+                signUpService = __decorate([
+                    core_1.Injectable(), 
                     __metadata('design:paramtypes', [])
-                ], DashboardComponent);
-                return DashboardComponent;
+                ], signUpService);
+                return signUpService;
             })();
-            exports_1("DashboardComponent", DashboardComponent);
+            exports_1("signUpService", signUpService);
         }
     }
 });
-//# sourceMappingURL=dashboard.component.js.map
+//# sourceMappingURL=signup.service.js.map

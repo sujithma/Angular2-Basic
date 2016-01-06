@@ -20,18 +20,20 @@ System.register(['angular2/core', 'angular2/router'], function(exports_1) {
             }],
         execute: function() {
             LoginComponent = (function () {
-                function LoginComponent() {
+                function LoginComponent(router) {
+                    this.router = router;
                 }
                 LoginComponent.prototype.onSubmit = function (event, username, password) {
                     console.log("hii");
                     console.log(username);
+                    this.router.parent.navigateByUrl('/dashboard');
                 };
                 LoginComponent = __decorate([
                     core_1.Component({
                         templateUrl: "./app/login/login.html",
                         directives: [router_1.ROUTER_DIRECTIVES]
                     }), 
-                    __metadata('design:paramtypes', [])
+                    __metadata('design:paramtypes', [router_1.Router])
                 ], LoginComponent);
                 return LoginComponent;
             })();

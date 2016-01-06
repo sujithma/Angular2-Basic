@@ -1,5 +1,5 @@
 import {Component} from 'angular2/core';
 @Component({
-	template:`<h1>Home</h1>`
+	templateUrl:'./app/dashboard/dashboard.html'
 })
 export class DashboardComponent {}
